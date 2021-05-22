@@ -16,6 +16,7 @@ const positiveReviewPercentage = (reviews) => {
     return item.numberOfStars;
   });
   return highest.reduce((a, b) => a * b);
+  //   return highest;
 };
 
 /**

@@ -5,12 +5,12 @@
  */
 
 const isPasswordCorrect = (password) => {
-  let correctPasswordList = ["password12", "123456", "qwertyuiop"];
+  let correctPasswordList = ["password@12", "123456", "qwertyuiop"];
 
-  if (password === correctPasswordList.includes("password12")) {
-    return true;
-  } else {
+  if (password !== correctPasswordList[0]) {
     return console.log(false);
+  } else {
+    return console.log(true);
   }
 };
 isPasswordCorrect("password12");
